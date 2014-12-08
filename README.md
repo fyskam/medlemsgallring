@@ -11,7 +11,7 @@ $ python main.py
 ```bash
 $ git clone https://github.com/fyskam/medlemsgallring.git
 ```
-Flytta `activate.php` till ett lämpligt ställe. Andra uppgifterna för mysqlservern i `activate.php`, `main.py`, `clean_members.py`, och eventuellt `create_hash.py`.
+Flytta `activate.php` till ett lämpligt ställe. Ändra uppgifterna för mysqlservern i `activate.php`, `main.py`, `clean_members.py`, och eventuellt `create_hash.py`. Ändra "http://link.to/activate.php" i `sc_compose.py` så att den pekar rätt.
 
 #### Konfigurera `sendmail`
 Installera sendmail:
