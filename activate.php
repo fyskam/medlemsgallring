@@ -26,8 +26,8 @@ if ($numrows != 1) die("Hashkollision, detta borde inte hända...");
 mysql_query("update $TABLE set active='1' where hash='$hashtag'");
 
 //kontroll
-if (mysql_affected_rows() == -1) die("Oväntat fel ("+mysql_error()+"). Kontakta Info (nvf-info@utn.se)");
-if (mysql_affected_rows() != 1) die("Oväntat fel ("+mysql_error()+"). Kontakta Info (nvf-info@utn.se)");
+if (mysql_affected_rows() == -1) die("Oväntat fel (".mysql_error()."). Kontakta Info (nvf-info@utn.se)");
+if (mysql_affected_rows() != 1) die("Oväntat fel (".mysql_error()."). Kontakta Info (nvf-info@utn.se)");
 
 mysql_close($con);
 echo "Ditt medlemskap är förnyat, tack för ditt engagemang";
